@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/white"
+        android:padding="20dp"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:text=""
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:text="BEFORE START : Enter your name (ONE TIME OPERATION ON SERVER)"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:textColorHint="@color/black"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/black"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save my name"
+            android:layout_marginBottom="25dp"
+            android:textAllCaps="false"
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:text="INSTRUCTIONS"
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:text="NOTE : FusedLocationProviderAPI will not work, when api doesn't match the required settings in device, google play
+service on device is one of them."
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:text="1. ENABLE YOUR GPS"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/startBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/start_location_tracking"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/stopBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/stop_location_tracking"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:backgroundTint="@android:color/holo_red_dark"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/locateAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Locate all users on map"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/teal_200"
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:text="Lat and lon will appear here"
+            />
+
+    </LinearLayout>
+
+
+
+</ScrollView>
